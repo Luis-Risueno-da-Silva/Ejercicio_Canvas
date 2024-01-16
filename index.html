@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invader por Luis Risueño</title>
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <h1>Space invaders</h1>
+
+    <!-- Game -->
+    <div class="game__div" id="game__div">
+        <canvas class="canvas" id="canvas" width="600px" height="600px"></canvas>
+        <div class="instructions__div">
+            <p class="green">Controles:</p>
+            <p>Moverse: Flecha derecha y Flecha izquierda</p>
+            <p>Disparar: Espacio</p>
+        </div>
+    </div>
+    <!-- End of Game -->
+
+    <!-- Win message -->
+    <div class="hide" id="win__message">
+        <h2>¡Has ganado!</h2>
+        <a href="./index.html" class="reset">Volver a jugar</a>
+    </div>
+    <!-- End of win message -->
+
+    <!-- Lose message -->
+    <div class="hide" id="lose__message">
+        <h2>¡Perdiste!</h2>
+        <a href="./index.html" class="reset">Volver a jugar</a>
+    </div>
+    <!-- End of lose message -->
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
